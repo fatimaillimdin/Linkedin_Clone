@@ -29,7 +29,7 @@ Copy
 Edit
 
 
-## 🔧 Setup Instructions
+##  Setup Instructions
 
 1. Clone the repository:
    ```bash
@@ -59,8 +59,7 @@ npm install
 npm start
 Open http://localhost:3000 to view it in your browser.
 
-🙌 Acknowledgements
+Acknowledgements
 Inspired by LinkedIn. Developed as part of a personal portfolio project.
-
-📫 Contact
+Contact
 For questions or collaborations, feel free to reach out on LinkedIn.<!-- @format -->
