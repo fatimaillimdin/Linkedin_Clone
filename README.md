@@ -2,7 +2,7 @@
 
 A full-stack web application that replicates key functionalities of LinkedIn. Built with React, Node.js, and SQL, this project allows users to create profiles, post updates, view feeds, and explore job-related networking features.
 
-## 🚀 Features
+##  Features
 
 - User Registration & Authentication
 - Profile Creation & Editing
@@ -11,14 +11,14 @@ A full-stack web application that replicates key functionalities of LinkedIn. Bu
 - SQL Database Integration
 - Responsive & Clean UI
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend**: React.js, HTML, CSS
 - **Backend**: Node.js, Express.js
 - **Database**: MySQL / MS SQL
 - **Version Control**: Git & GitHub
 
-## 📂 Folder Structure
+## Folder Structure
 
 /client → React frontend
 /server → Node.js + Express backend
@@ -28,9 +28,6 @@ markdown
 Copy
 Edit
 
-## 📸 Screenshots
-
-> *Insert screenshots here if available*
 
 ## 🔧 Setup Instructions
 
