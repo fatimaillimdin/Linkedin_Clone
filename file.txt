@@ -1,0 +1,46 @@
+`EXEC proc_remove_connection ${connectionId}`
+`EXEC proc_accept_connection ${connectionId}`
+`EXEC proc_send_connections_request ${req.userId}, ${to}`
+
+
+// ->
+  const { error, result } = await executeQuery(
+    req.app.locals.db,
+    `EXEC proc_get_user_connections ${userId}`
+  );
+
+  if (error) {
+    res.status(500).send({
+      message: error.message,
+    });
+    return;
+  }
+
+  const finalResult = result?.map((item) => {
+    if (item.userFromId === Number(userId)) {
+      return {
+        id: item.userToId,
+        fullname: item.userToFullname,
+        username: item.userToUsername,
+        work: item.userToWork,
+        image: item.userToImage,
+      };
+    } else {
+      return {
+        id: item.userFromId,
+        fullname: item.userFromFullname,
+        username: item.userFromUsername,
+        work: item.userFromWork,
+        image: item.userFromImage,
+      };
+    }
+  });
+
+
+`EXEC proc_add_skill @userId = ${req.userId}, @skillId = ${value.skills[i]}`
+`EXEC proc_remove_user_skills @userId = ${req.userId}`
+
+`EXEC proc_get_user_skills @userId = ${id}`
+`EXEC proc_mark_messages_as_read @fromUserId = ${withUserId},@toUserId = ${userId}`
+`EXEC proc_get_by_user @userId = ${userId},@fromUserId = ${withUserId}`
+`proc_get_last_message_by_user @userId = ${userId},@fromUserId = ${connectedUsers[i].id}`
